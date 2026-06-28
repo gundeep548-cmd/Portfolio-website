@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gundeep Kaur Portfolio</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:#233153;
+color:white;
+}
+
+.navbar{
+background:#3362c5;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+padding-top:80px;
+}
+
+.profile{
+width:420px;
+height: 420px;
+border-radius:25px;
+border: 4px solid #38bdf8;
+object-fit:cover;
+box-shadow:0 0 30px rgba(56,189,248,.5);
+}
+
+.highlight{
+color:#38bdf8;
+}
+
+.btn-custom{
+background:#38bdf8;
+color:white;
+padding:12px 25px;
+border:none;
+border-radius:30px;
+text-decoration:none;
+}
+
+.section{
+padding:80px 0;
+}
+
+.card-custom{
+background:#1e293b;
+border:none;
+border-radius:15px;
+padding:20px;
+height:100%;
+transition:.3s;
+}
+
+.card-custom:hover{
+transform:translateY(-10px);
+}
+
+.skill{
+margin-bottom:20px;
+}
+
+.progress{
+height:10px;
+}
+
+footer{
+background:#111827;
+padding:20px;
+text-align:center;
+}
+
+.qr-card{
+    text-align: center;
+}
+
+.nav-links{
+    color: white !important;
+    font-weight: 500;
+}
+
+.skill-icon{
+    font-size: 60px;
+    color: #38bdf8;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+.skill-icon:hover{
+    transform: scale(1.2);
+    color: white;
+}
+
+#skills .col-md-3{
+    background: rgba(255,255,255,0.05);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card-custom p{
+    font-size:18px;
+    margin-bottom:15px;
+}
+
+.card-custom i{
+    color:#38bdf8;
+    margin-right:10px;
+    width:25px;
+}
+
+.card-custom a{
+    color:white;
+    text-decoration:none;
+}
+
+.card-custom a:hover{
+    color:#38bdf8;
+}
+</style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top glass-nav">
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="#">
+            Gundeep Kaur
+        </a>
+
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse"
+            id="navbarNav">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#home">
+                        <i class="fas fa-house"></i>
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">
+                        <i class="fas fa-user"></i>
+                        About
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">
+                        <i class="fas fa-code"></i>
+                        Skills
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">
+                        <i class="fas fa-graduation-cap"></i>
+                        Education
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">
+                        <i class="fas fa-laptop-code"></i>
+                        Projects
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">
+                        <i class="fas fa-envelope"></i>
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+</nav>
+<section class="hero" id="home">
+<div class="container">
+<div class="row align-items-center">
+
+<div class="col-lg-6">
+<h3>Hello, I'm <span id="typing"></span></h3>
+
+<h1 class="display-3 fw-bold">
+Gundeep <span class="highlight">Kaur</span>
+</h1>
+
+<h3 id="typing"></h3>
+
+<p class="mt-4">
+Passionate Full Stack Python Developer with hands-on experience in
+HTML, CSS, Bootstrap, JavaScript, Python, Django,
+MySQL and OpenCV.<br>I enjoy building responsive web applications and AI-powered solutions that solved real-world problems.
+</p>
+
+<a href="resume.pdf" download class="btn-custom">
+Download Resume
+</a>
+
+<a href="#contact" class="btn btn-outline-info">
+Contact Me
+</a>
+</div>
+
+<div class="col-lg-6 text-center mt-5 mt-lg-0">
+<img src="images/gundeep.jpeg" class="profile" alt="Profile" height="200px">
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="about" class="section">
+<div class="container">
+
+<h2 class="text-center mb-5">About Me</h2>
+
+<div class="card-custom">
+
+<p>
+Hello! I'm <strong>Gundeep Kaur</strong>, a passionate Full Stack Python Developer and B.Tech Computer Science Engineering student. I have a strong interest in web development, database management, and AI-powered applications.
+</p>
+
+<p>
+My technical skills include HTML, CSS, Bootstrap, JavaScript, Python, Django, MySQL, and OpenCV. I enjoy creating responsive and user-friendly websites that provide a seamless user experience across different devices.
+</p>
+
+<p>
+One of my major projects is a Smart Attendance System using Face Recognition, developed with Python, Django, OpenCV, and MySQL. This project automatically identifies users through facial recognition and records attendance efficiently.
+</p>
+
+<p>
+I am continuously learning new technologies and improving my development skills. My goal is to build innovative software solutions, contribute to real-world projects, and grow as a professional web developer.
+</p>
+
+<p>
+I am a quick learner, team player, and highly motivated individual who enjoys solving problems and creating impactful digital experiences.
+</p>
+
+</div>
+
+</div>
+</section>
+
+</div>
+</section>
+
+<section class="section" id="skills">
+<div class="container">
+<h2 class="text-center mb-5">Skills</h2>
+
+<section id="skills" class="section">
+<div class="container">
+
+<h2 class="text-center mb-5">
+    <i class="fas fa-code"></i> Skills
+</h2>
+
+<div class="row text-center">
+
+    <div class="col-md-3 col-6 mb-4">
+        <i class="fab fa-html5 skill-icon"></i>
+        <h5>HTML5</h5>
+    </div>
+
+    <div class="col-md-3 col-6 mb-4">
+        <i class="fab fa-css3-alt skill-icon"></i>
+        <h5>CSS3</h5>
+    </div>
+
+    <div class="col-md-3 col-6 mb-4">
+        <i class="fab fa-bootstrap skill-icon"></i>
+        <h5>Bootstrap</h5>
+    </div>
+
+    <div class="col-md-3 col-6 mb-4">
+        <i class="fab fa-js skill-icon"></i>
+        <h5>JavaScript</h5>
+    </div>
+
+    <div class="col-md-3 col-6 mb-4">
+        <i class="fab fa-python skill-icon"></i>
+        <h5>Python</h5>
+    </div>
+
+    <div class="col-md-3 col-6 mb-4">
+        <i class="fas fa-server skill-icon"></i>
+        <h5>Django</h5>
+    </div>
+
+    <div class="col-md-3 col-6 mb-4">
+        <i class="fas fa-database skill-icon"></i>
+        <h5>MySQL</h5>
+    </div>
+
+    <div class="col-md-3 col-6 mb-4">
+        <i class="fas fa-camera skill-icon"></i>
+        <h5>OpenCV</h5>
+    </div>
+
+</div>
+
+</div>
+</section>
+<section id="education" class="section">
+
+    <div class="container">
+
+        <h2 class="text-center mb-5">
+            <li class="fas fa-graduation-cap"></li>
+            Education
+        </h2>
+        <div class="card-custom">
+
+            <h4>B.Tech Computer Science & Engineering</h4>
+            <p>2022 - 2026</p>
+
+            <p>Currently pursuing B.Tech in Computer Science Engineering with focus on Full Stack Development, Python, Django and OpenCV.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="projects">
+<div class="container">
+
+<h2 class="text-center mb-5">Projects</h2>
+
+<div class="row">
+
+<div class="col-md-4 mb-4">
+<div class="card-custom">
+<h4>Smart Attendance Using Facial Recognition Technology</h4>
+<p>
+Face Recognition based attendance system
+using Python, Django, OpenCV and MySQL.<br>
+The system automatically detects and recognizes registered users through a webcam and marks their attendance in the database without manual intervention.
+</p>
+</div>
+</div>
+
+<div class="col-md-4 mb-4">
+<div class="card-custom">
+<h4>QR Code of Project</h4>
+<p>
+<img src="project_qr.png" class="img-fluid d-block mx-auto" alt="QR Code of Project" width="150px">
+</p>
+<p>This QR Code helps you to easily access on my project.</p>
+</div>
+</div>
+
+<div class="col-md-4 mb-4">
+<div class="card-custom">
+<h4>Portfolio Website</h4>
+<p>
+Responsive website using HTML, CSS,
+Bootstrap and JavaScript.<br>The website showcases my technical skills, educational background, and contact information in a professional manner.<br>The main objective of this project is to establish a professional online presence, demonstrate my development skills, and provide recruiters and clients with easy access to my work and achievements.
+</p>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="section" id="contact">
+<div class="container">
+
+<h2 class="text-center mb-5">Contact Me</h2>
+
+<div class="card-custom">
+
+<div class="card-custom">
+
+    <p>
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:gundeep548@gmail.com">
+        gundeep548@gmail.com
+        </a>
+    </p>
+
+    <p>
+        <i class="fab fa-github"></i>
+        <a href=" https://github.com/gundeep548-cmd/student_attendance_project.git">
+            GitHub Profile
+        </a>
+    </p>
+
+    <p>
+        <i class="fab fa-linkedin"></i>
+        <a href=" linkedin.com/in/gundeep-kaur">
+            LinkedIn Profile
+        </a>
+    </p>
+
+    <p>
+        <i class="fas fa-phone"></i>
+        <a href="tel:+91- 87289 86075">
+            +91- 87289 86075
+
+        </a>
+      
+    </p>
+
+    <p>
+        <i class="fas fa-location-dot"></i>
+        <a href="https://maps.google.com/?q=Punjab,India">
+            Punjab, India
+        </a>
+        
+    </p>
+
+</div>
+
+</div>
+
+</div>
+</section>
+
+<footer>
+© 2026 Gundeep Kaur | Full Stack Python Developer
+</footer>
+
+<script>
+const text=["Full Stack Python Developer",
+"Python Developer",
+"Front End Developer",
+"Django Developer",
+];
+
+let i=0;
+
+setInterval(()=>{
+document.getElementById("typing").innerHTML = text[i];
+i= (i + 1)% text.length;
+
+}, 2000);
+
+
+type();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
