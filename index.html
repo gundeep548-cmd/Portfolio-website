@@ -10,155 +10,124 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 <style>
+    
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-scroll-behavior:smooth;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
 }
 
 body{
-overflow-x:hidden;
+    overflow-x:hidden;
+    background:#0f172a;
+    color:white;
 }
 
 img{
     max-width:100%;
     height:auto;
 }
-    @media (max-width:768px){
-
-    .navbar{
-        flex-direction:column;
-        gap:15px;
-    }
-
-    .hero{
-        flex-direction:column-reverse;
-        text-align:center;
-    }
-
-    .hero img{
-        width:220px;
-        height:220px;
-    }
-
-    .skills,
-    .projects{
-        display:grid;
-        grid-template-columns:1fr;
-    }
-
-    h1{
-        font-size:2rem;
-    }
-
-    p{
-        font-size:16px;
-    }
-
-    .btn{
-        width:100%;
-        margin:8px 0;
-    }
-}
-
-    
 
 .navbar{
-background:#3362c5;
+    background:#3362c5;
+}
+
+.navbar-brand,
+.nav-link{
+    color:white !important;
+    font-weight:500;
 }
 
 .hero{
-min-height:100vh;
-display:flex;
-align-items:center;
-padding-top:80px;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    padding-top:80px;
 }
 
 .profile{
-width:420px;
-height: 420px;
-border-radius:25px;
-border: 4px solid #38bdf8;
-object-fit:cover;
-box-shadow:0 0 30px rgba(56,189,248,.5);
+    width:420px;
+    height:420px;
+    border-radius:25px;
+    border:4px solid #38bdf8;
+    object-fit:cover;
+    box-shadow:0 0 30px rgba(56,189,248,.5);
 }
 
 .highlight{
-color:#38bdf8;
+    color:#38bdf8;
 }
 
 .btn-custom{
-background:#38bdf8;
-color:white;
-padding:12px 25px;
-border:none;
-border-radius:30px;
-text-decoration:none;
+    background:#38bdf8;
+    color:white;
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    text-decoration:none;
 }
 
 .section{
-padding:80px 0;
+    padding:80px 0;
 }
 
 .card-custom{
-background:#1e293b;
-border:none;
-border-radius:15px;
-padding:20px;
-height:100%;
-transition:.3s;
+    background:#1e293b;
+    color:white;
+    border:none;
+    border-radius:15px;
+    padding:20px;
+    height:100%;
+    transition:.3s;
 }
 
 .card-custom:hover{
-transform:translateY(-10px);
+    transform:translateY(-10px);
+}
+
+.card-custom h4,
+.card-custom h5,
+.card-custom p,
+.card-custom a{
+    color:white !important;
 }
 
 .skill{
-margin-bottom:20px;
+    margin-bottom:20px;
 }
 
 .progress{
-height:10px;
+    height:10px;
 }
 
 footer{
-background:#111827;
-padding:20px;
-text-align:center;
+    background:#111827;
+    padding:20px;
+    text-align:center;
 }
 
 .qr-card{
-    text-align: center;
-}
-
-.nav-links{
-    color: white !important;
-    font-weight: 500;
+    text-align:center;
 }
 
 .skill-icon{
-    font-size: 60px;
-    color: #38bdf8;
-    margin-bottom: 15px;
-    transition: 0.3s;
+    font-size:60px;
+    color:#38bdf8;
+    margin-bottom:15px;
+    transition:.3s;
 }
 
 .skill-icon:hover{
-    transform: scale(1.2);
-    color: white;
+    transform:scale(1.2);
+    color:white;
 }
 
 #skills .col-md-3{
-    background: rgba(255,255,255,0.05);
-    border-radius: 15px;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-.card-custom p{
-    font-size:18px;
-    margin-bottom:15px;
+    background:rgba(255,255,255,0.05);
+    border-radius:15px;
+    padding:20px;
+    margin-bottom:20px;
 }
 
 .card-custom i{
@@ -167,13 +136,49 @@ text-align:center;
     width:25px;
 }
 
-.card-custom a{
-    color:white;
-    text-decoration:none;
-}
+/* MOBILE RESPONSIVE */
 
-.card-custom a:hover{
-    color:#38bdf8;
+@media (max-width:768px){
+
+    .hero{
+        text-align:center;
+        padding-top:100px;
+    }
+
+    .profile{
+        width:250px;
+        height:250px;
+        margin-top:20px;
+    }
+
+    h1{
+        font-size:2rem !important;
+    }
+
+    h2{
+        font-size:1.8rem;
+    }
+
+    p{
+        font-size:15px;
+        line-height:1.6;
+    }
+
+    .btn-custom,
+    .btn{
+        width:100%;
+        display:block;
+        margin:10px 0;
+    }
+
+    .card-custom{
+        margin-bottom:20px;
+    }
+
+    .container{
+        padding-left:15px;
+        padding-right:15px;
+    }
 }
 </style>
 </head>
@@ -256,8 +261,6 @@ text-align:center;
 <h1 class="display-3 fw-bold">
 Gundeep <span class="highlight">Kaur</span>
 </h1>
-
-<h3 id="typing"></h3>
 
 <p class="mt-4">
 Passionate Full Stack Python Developer with hands-on experience in
